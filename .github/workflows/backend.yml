@@ -25,7 +25,7 @@ jobs:
       - run: npm run build
       
       - uses: actions/upload-artifact@v3
-        if: allways()
+        if: always()
         with:
           name: coverage
           path: backend/coverage/**
