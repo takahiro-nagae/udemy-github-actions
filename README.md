@@ -1,1 +1,2 @@
 # udemy-github-actions
+[![backend](https://github.com/Kumario627/udemy-github-actions/actions/workflows/backend.yml/badge.svg)](https://github.com/Kumario627/udemy-github-actions/actions/workflows/backend.yml)
