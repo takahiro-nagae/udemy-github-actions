@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 12 * * *'
       
 defaults:
   run:
@@ -23,6 +25,7 @@ jobs:
       - run: npm run build
       
       - uses: actions/upload-artifact@v3
+        if: allows()
         with:
           name: coverage
           path: backend/coverage/**
