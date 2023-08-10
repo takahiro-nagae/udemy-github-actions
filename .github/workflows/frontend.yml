@@ -17,4 +17,4 @@ jobs:
       - run: aws s3 sync . s3://udemy-github-actions-s3-nagae --exact-timestamps --region api-northeast-1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.FRONTEND_AWS_ACCESS_KEY }}
-          AWS_SECRET_ACCESS_KEY_ID: ${{ secrets.FRONTEND_AWS_SECRET_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.FRONTEND_AWS_SECRET_ACCESS_KEY }}
